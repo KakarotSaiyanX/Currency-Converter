@@ -1,7 +1,8 @@
+import 'package:currency_converter/currency_converter_material_page.dart';
 import 'package:flutter/material.dart';
 
 void main(){
-    runApp(const MyApp());
+    runApp( MyApp());
 }
 //state - a data which determine how should ui should behave or look like.
 
@@ -12,9 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            body: Center(child: Text("Hello world!!!!")),
-        ),
+        home: CurrencyConverterMaterialPage()
     );
   }
 }
